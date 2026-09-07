@@ -45,7 +45,59 @@ header p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
+.logo-nav {
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+}
 
+/* ========================================
+   BOTONES DE ACCESO
+======================================== */
+
+.acceso-usuario {
+    background-color: white;
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.botones-acceso {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.boton-login,
+.boton-registro {
+    text-decoration: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.boton-login {
+    color: #faf5f5;
+    border: 1px solid #070707;
+    background-color: #051937;
+}
+
+.boton-login:hover {
+    background-color: #f3f4f4;
+    color: rgb(16, 15, 15);
+}
+
+.boton-registro {
+    color: white;
+    background-color: #051937;
+    border: 1px solid #070707;
+}
+
+.boton-registro:hover {
+    background-color: #f5f6f9;
+    color: rgb(14, 13, 13);
+}
 /* ========================================
    clase hero
 ======================================== */
