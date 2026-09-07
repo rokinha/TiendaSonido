@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del producto - Sonido Vivo</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Sonido Vivo</h1>
+        <p>Instrumentos musicales y equipos de sonido</p>
+    </header>
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img
+                    src="img/logo.png"
+                    alt="Logo Sonido Vivo"
+                    class="logo-nav">
+            </a>
+
+
+            <!-- BOTÓN MENÚ MÓVIL -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal"
+                aria-expanded="false"
+                aria-label="Abrir menú">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- MENÚ -->
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="productos.html">
+                            Productos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrito.html">
+                            🛒 Carrito
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ACCESO DE USUARIOS -->
+    <section class="acceso-usuario">
+
+        <div class="container">
+
+            <div class="botones-acceso">
+
+                <a href="login.html" class="boton-login">
+                    Iniciar sesión
+                </a>
+
+                <a href="registro.html" class="boton-registro">
+                    Registrarse
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <section class="productos-destacados">
+
+            <div class="container py-5">
+
+                <!-- TÍTULO -->
+                <div class="text-center mb-5">
+
+                    <p class="subtitulo-seccion">
+                        DETALLE DEL PRODUCTO
+                    </p>
+
+                    <h2>
+                        Guitarra Acústica
+                    </h2>
+
+                    <div class="linea-decorativa"></div>
+
+                </div>
+
+
+                <!-- DETALLE -->
+                <article class="card producto-card">
+
+                    <div class="row g-0 align-items-center">
+
+                        <!-- IMAGEN -->
+                        <div class="col-12 col-lg-6">
+
+                            <div class="producto-imagen">
+
+                                <img
+                                    src="img/guitarra.jpg"
+                                    class="img-fluid w-100"
+                                    alt="Guitarra acústica">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- INFORMACIÓN -->
+                        <div class="col-12 col-lg-6">
+
+                            <div class="card-body p-4 p-lg-5">
+
+                                <p class="subtitulo-seccion">
+                                    GUITARRAS ACÚSTICAS
+                                </p>
+
+                                <h3 class="card-title">
+                                    Guitarra Acústica
+                                </h3>
+
+                                <p class="card-text">
+                                    Una guitarra acústica ideal para
+                                    músicos que buscan un instrumento
+                                    versátil y de excelente sonido.
+                                </p>
+
+
+                                <!-- INFORMACIÓN -->
+                                <div class="mb-3">
+
+                                    <p class="mb-2">
+                                        <strong>Código:</strong>
+                                        GA001
+                                    </p>
+
+                                    <p class="mb-2">
+                                        <strong>Marca:</strong>
+                                        Yamaha
+                                    </p>
+
+                                    <p class="mb-2">
+                                        <strong>Modelo:</strong>
+                                        F310
+                                    </p>
+
+                                    <p class="mb-2">
+                                        <strong>Stock disponible:</strong>
+                                        15 unidades
+                                    </p>
+
+                                </div>
+
+
+                                <!-- PRECIO -->
+                                <p class="precio">
+                                    $129.990
+                                </p>
+
+
+                                <!-- CANTIDAD -->
+                                <div class="mb-4">
+
+                                    <label
+                                        for="cantidad"
+                                        class="form-label fw-bold">
+
+                                        Cantidad
+
+                                    </label>
+
+                                    <input
+                                        type="number"
+                                        id="cantidad"
+                                        class="form-control"
+                                        value="1"
+                                        min="1"
+                                        max="15">
+
+                                </div>
+
+
+                                <!-- BOTÓN -->
+                                <button
+                                    type="button"
+                                    class="btn btn-primary boton-carrito">
+
+                                    🛒 Agregar al carrito
+
+                                </button>
+
+
+                                <!-- VOLVER -->
+                                <a
+                                    href="productos.html"
+                                    class="btn btn-outline-secondary w-100 mt-2">
+
+                                    ← Volver a productos
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 Sonido Vivo - Todos los derechos reservados.
+            </p>
+
+            <p>
+                Viña del Mar, Región de Valparaíso
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+    <!-- JavaScript propio -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
