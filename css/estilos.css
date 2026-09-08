@@ -43,6 +43,13 @@ header p {
     font-size: 1.1rem;
 }
 
+.logo-header {
+    width: 400px;
+    max-width: 85%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 
 /* ========================================
    barra de navegacion 
@@ -54,9 +61,10 @@ header p {
 }
 
 .logo-nav {
-    height: 50px;
-    width: auto;
+    width: 75px;
+    height: auto;
     border-radius: 10px;
+    display: block;
 }
 
 /* ========================================
@@ -405,6 +413,25 @@ footer p {
     }
 
     header p {
+        font-size: 0.9rem;
+    }
+
+    .logo-header {
+        width: 310px;
+        max-width: 90%;
+    }
+
+    .logo-nav {
+        width: 65px;
+    }
+
+     .botones-acceso {
+        gap: 8px;
+    }
+
+    .boton-login,
+    .boton-registro {
+        padding: 8px 15px;
         font-size: 0.9rem;
     }
 
