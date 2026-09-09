@@ -379,6 +379,34 @@ header p {
     margin-right: 0;
 }
 
+/* ========================================
+   NOTIFICACIONES
+======================================== */
+
+.notificacion-carrito {
+    position: fixed;
+    top: 90px;
+    right: 25px;
+    z-index: 9999;
+    background-color: #198754;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(-15px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.notificacion-carrito.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notificacion-carrito.error {
+    background-color: #dc3545;
+}
 
 /* ========================================
    footer
@@ -522,6 +550,13 @@ footer p {
     .contacto .row {
         margin-left: 0;
         margin-right: 0;
+    }
+
+    .notificacion-carrito {
+        left: 20px;
+        right: 20px;
+        top: 80px;
+        text-align: center;
     }
 
 }
