@@ -123,149 +123,14 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <section class="productos-destacados">
+        <section class="detalle-producto py-5">
+            <div class="container">
 
-            <div class="container py-5">
-
-                <!-- TÍTULO -->
-                <div class="text-center mb-5">
-
-                    <p class="subtitulo-seccion">
-                        DETALLE DEL PRODUCTO
-                    </p>
-
-                    <h2>
-                        Guitarra Acústica
-                    </h2>
-
-                    <div class="linea-decorativa"></div>
-
+                <div id="detalleProducto">
+                    <!-- JavaScript cargará el producto -->
                 </div>
 
-
-                <!-- DETALLE -->
-                <article class="card producto-card">
-
-                    <div class="row g-0 align-items-center">
-
-                        <!-- IMAGEN -->
-                        <div class="col-12 col-lg-6">
-
-                            <div class="producto-imagen">
-
-                                <img
-                                    src="img/guitarra.jpg"
-                                    class="img-fluid w-100"
-                                    alt="Guitarra acústica">
-
-                            </div>
-
-                        </div>
-
-
-                        <!-- INFORMACIÓN -->
-                        <div class="col-12 col-lg-6">
-
-                            <div class="card-body p-4 p-lg-5">
-
-                                <p class="subtitulo-seccion">
-                                    GUITARRAS ACÚSTICAS
-                                </p>
-
-                                <h3 class="card-title">
-                                    Guitarra Acústica
-                                </h3>
-
-                                <p class="card-text">
-                                    Una guitarra acústica ideal para
-                                    músicos que buscan un instrumento
-                                    versátil y de excelente sonido.
-                                </p>
-
-
-                                <!-- INFORMACIÓN -->
-                                <div class="mb-3">
-
-                                    <p class="mb-2">
-                                        <strong>Código:</strong>
-                                        GA001
-                                    </p>
-
-                                    <p class="mb-2">
-                                        <strong>Marca:</strong>
-                                        Yamaha
-                                    </p>
-
-                                    <p class="mb-2">
-                                        <strong>Modelo:</strong>
-                                        F310
-                                    </p>
-
-                                    <p class="mb-2">
-                                        <strong>Stock disponible:</strong>
-                                        15 unidades
-                                    </p>
-
-                                </div>
-
-
-                                <!-- PRECIO -->
-                                <p class="precio">
-                                    $129.990
-                                </p>
-
-
-                                <!-- CANTIDAD -->
-                                <div class="mb-4">
-
-                                    <label
-                                        for="cantidad"
-                                        class="form-label fw-bold">
-
-                                        Cantidad
-
-                                    </label>
-
-                                    <input
-                                        type="number"
-                                        id="cantidad"
-                                        class="form-control"
-                                        value="1"
-                                        min="1"
-                                        max="15">
-
-                                </div>
-
-
-                                <!-- BOTÓN -->
-                                <button
-                                    type="button"
-                                    class="btn btn-primary boton-carrito">
-
-                                    🛒 Agregar al carrito
-
-                                </button>
-
-
-                                <!-- VOLVER -->
-                                <a
-                                    href="productos.html"
-                                    class="btn btn-outline-secondary w-100 mt-2">
-
-                                    ← Volver a productos
-
-                                </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
             </div>
-
         </section>
 
     </main>
@@ -295,7 +160,9 @@
     </script>
 
     <!-- JavaScript propio -->
+    <script src="js/productos.js"></script>
     <script src="js/app.js"></script>
+    
 
 </body>
 

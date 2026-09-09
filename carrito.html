@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Productos - Sonido Vivo</title>
+    <title>Carrito - Sonido Vivo</title>
 
     <!-- Bootstrap -->
     <link
@@ -17,8 +17,15 @@
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-        <img src="img/logo_sonido_vivo_recortado.png" alt="logo sonido vivo" class="logo-header">
+        <a href="index.html">
+            <img
+                src="img/logo_sonido_vivo_recortado.png"
+                alt="Logo Sonido Vivo"
+                class="logo-header">
+        </a>
     </header>
 
 
@@ -27,13 +34,15 @@
 
         <div class="container">
 
-            <!-- LOGO -->
+            <!-- Onda de sonido -->
             <a class="navbar-brand fw-bold" href="index.html">
-               <img src="img/ondaSonido.png" alt="Logo onda de sonido" class="logo-nav">
+                <img
+                    src="img/ondaSonido.png"
+                    alt="Logo onda de sonido"
+                    class="logo-nav">
             </a>
 
-
-            <!-- BOTÓN MENÚ MÓVIL -->
+            <!-- Botón menú móvil -->
             <button
                 class="navbar-toggler"
                 type="button"
@@ -48,7 +57,7 @@
             </button>
 
 
-            <!-- MENÚ -->
+            <!-- Menú -->
             <div class="collapse navbar-collapse" id="menuPrincipal">
 
                 <ul class="navbar-nav ms-auto">
@@ -60,7 +69,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="productos.html">
+                        <a class="nav-link" href="productos.html">
                             Productos
                         </a>
                     </li>
@@ -84,7 +93,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="carrito.html">
+                        <a class="nav-link active" href="carrito.html">
                             🛒 Carrito
                         </a>
                     </li>
@@ -94,7 +103,6 @@
             </div>
 
         </div>
-
     </nav>
 
 
@@ -123,24 +131,24 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <!-- TÍTULO -->
-        <section class="productos-destacados">
+        <section class="carrito">
 
             <div class="container py-5">
 
+                <!-- TÍTULO -->
                 <div class="text-center mb-5">
 
                     <p class="subtitulo-seccion">
-                        NUESTRO CATÁLOGO
+                        SONIDO VIVO
                     </p>
 
-                    <h2>
-                        Productos
-                    </h2>
+                    <h1>
+                        Mi carrito
+                    </h1>
 
                     <p class="descripcion-seccion">
-                        Encuentra instrumentos musicales y equipos
-                        de sonido para todos los estilos.
+                        Revisa los productos que has agregado
+                        antes de continuar con tu compra.
                     </p>
 
                     <div class="linea-decorativa"></div>
@@ -148,10 +156,98 @@
                 </div>
 
 
-                <!-- PRODUCTOS -->
-                <div class="row g-4" id="productosContainer">
-                    
+                <!-- CONTENIDO DEL CARRITO -->
+                <div class="row g-4">
+
+                    <!-- PRODUCTOS -->
+                    <div class="col-12 col-lg-8">
+
+                        <div class="card producto-card">
+
+                            <div class="card-body">
+
+                                <h2 class="mb-4">
+                                    Productos seleccionados
+                                </h2>
+
+                                <!--
+                                    JavaScript agregará aquí
+                                    los productos del carrito.
+                                -->
+                                <div id="listaCarrito">
+
+                                    <p class="text-muted text-center">
+                                        Tu carrito está vacío.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RESUMEN -->
+                    <div class="col-12 col-lg-4">
+
+                        <div class="card producto-card">
+
+                            <div class="card-body">
+
+                                <h2 class="mb-4">
+                                    Resumen de compra
+                                </h2>
+
+                                <div class="d-flex justify-content-between mb-3">
+
+                                    <span>
+                                        Productos
+                                    </span>
+
+                                    <span id="cantidadCarrito">
+                                        0
+                                    </span>
+
+                                </div>
+
+                                <hr>
+
+                                <div class="d-flex justify-content-between">
+
+                                    <strong>
+                                        Total
+                                    </strong>
+
+                                    <strong
+                                        id="totalCarrito"
+                                        class="precio">
+
+                                        $0
+
+                                    </strong>
+
+                                </div>
+
+                                <button
+                                    type="button"
+                                    id="btnContinuarCompra"
+                                    class="btn btn-primary boton-carrito mt-4">
+
+                                    Continuar compra
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
+
+            </div>
 
         </section>
 

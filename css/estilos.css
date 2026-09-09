@@ -238,24 +238,20 @@ header p {
     object-fit: cover;
 }
 
-
 /* ========================================
-   etiquetas
+   ETIQUETAS DE PRODUCTOS
 ======================================== */
 
 .producto-etiqueta {
     position: absolute;
-
     top: 15px;
     left: 15px;
-
     z-index: 2;
 
     background-color: #0d6efd;
     color: white;
 
     padding: 7px 14px;
-
     border-radius: 20px;
 
     font-size: 0.85rem;
@@ -270,13 +266,18 @@ header p {
     background-color: #dc3545;
 }
 
-
 /* ========================================
    informacion de productos
 ======================================== */
 
 .producto-card .card-body {
     padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-card .boton-carrito {
+    margin-top: auto;
 }
 
 .producto-card .card-title {
@@ -291,9 +292,6 @@ header p {
     min-height: 48px;
 }
 
-
-/* Precio */
-
 .precio {
     color: #0d6efd;
     font-size: 1.7rem;
@@ -302,17 +300,37 @@ header p {
 }
 
 
-/* Envío y garantía */
-
 .producto-info {
     display: flex;
     justify-content: space-between;
     gap: 10px;
-
     margin-bottom: 20px;
-
     color: #667085;
     font-size: 0.85rem;
+}
+
+
+.precio {
+    color: #0d6efd;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+.precio-original {
+    display: block;
+    color: #777;
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: line-through;
+    margin-bottom: 3px;
+}
+
+.precio-oferta {
+    display: block;
+    color: #0d6efd;
+    font-size: 1.7rem;
+    font-weight: bold;
 }
 
 
@@ -323,10 +341,42 @@ header p {
 .boton-carrito {
     width: 100%;
     padding: 11px;
-
     font-weight: bold;
-
     border-radius: 8px;
+}
+
+.detalle-producto .boton-carrito {
+    width: auto;
+}
+
+.detalle-producto h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.detalle-producto .boton-carrito,
+.detalle-producto .btn-outline-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   estilos de contacto
+======================================== */
+
+.contacto {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.contacto .container {
+    width: 100%;
+}
+
+.contacto .row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -351,7 +401,7 @@ footer p {
 
 
 /* ========================================
-   responsivo
+   responsivo pantalla mediana 
 ======================================== */
 
 @media (max-width: 991.98px) {
@@ -395,9 +445,10 @@ footer p {
     }
 
     .producto-info {
-        flex-direction: column;
-        gap: 8px;
-    }
+    flex-direction: column;
+    gap: 8px;
+}
+
 
 }
 
@@ -425,7 +476,7 @@ footer p {
         width: 65px;
     }
 
-     .botones-acceso {
+    .botones-acceso {
         gap: 8px;
     }
 
@@ -461,6 +512,16 @@ footer p {
 
     .precio {
         font-size: 1.5rem;
+    }
+
+    .contacto .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contacto .row {
+        margin-left: 0;
+        margin-right: 0;
     }
 
 }
