@@ -163,6 +163,7 @@
                                        id="codigoProducto"
                                        name="codigoProducto"
                                        class="form-control">
+                                       <p id="error-codigo" class="text-danger"></p>
 
                             </div>
 
@@ -178,6 +179,7 @@
                                        id="nombreProducto"
                                        name="nombreProducto"
                                        class="form-control">
+                                       <p id="error-nombre-producto" class="text-danger"></p>
 
                             </div>
 
@@ -193,6 +195,7 @@
                                           name="descripcionProducto"
                                           class="form-control"
                                           rows="4"></textarea>
+                                          <p id="error-descripcion" class="text-danger"></p>
 
                             </div>
 
@@ -208,6 +211,7 @@
                                        id="precioProducto"
                                        name="precioProducto"
                                        class="form-control">
+                                       <p id="error-precio" class="text-danger"></p>
 
                             </div>
 
@@ -223,6 +227,7 @@
                                        id="stockProducto"
                                        name="stockProducto"
                                        class="form-control">
+                                       <p id="error-stock" class="text-danger"></p>
 
                             </div>
 
@@ -238,6 +243,7 @@
                                        id="stockCritico"
                                        name="stockCritico"
                                        class="form-control">
+                                       <p id="error-stock-critico" class="text-danger"></p>
 
                             </div>
 
@@ -294,6 +300,7 @@
                                     </option>
 
                                 </select>
+                                <p id="error-categoria" class="text-danger"></p>
 
                             </div>
 
@@ -310,6 +317,7 @@
                                        name="imagenProducto"
                                        class="form-control"
                                        accept="image/*">
+                                       <p id="error-imagen" class="text-danger"></p>
 
                             </div>
 
@@ -325,6 +333,8 @@
                                         class="btn btn-outline-secondary">
                                     Limpiar
                                 </button>
+
+                                <p id="producto-guardado" class="text-success"></p>
 
                             </div>
 
@@ -357,6 +367,7 @@
     <!-- JavaScript propio -->
     <script src="js/productos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/validacion-admin-productos.js"></script>
 
 </body>
 
