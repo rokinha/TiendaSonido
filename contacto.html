@@ -247,7 +247,7 @@
                             </p>
 
 
-                            <form id="formularioContacto">
+                            <form id="formularioContacto" novalidate>
 
                                 <!-- NOMBRE -->
                                 <div class="mb-3">
@@ -267,7 +267,8 @@
                                         name="nombre"
                                         maxlength="100"
                                         placeholder="Ingresa tu nombre"
-                                        required>
+                                        >
+                                        <p id="error-nombre" class="text-danger"></p>
 
                                 </div>
 
@@ -290,7 +291,8 @@
                                         name="email"
                                         maxlength="100"
                                         placeholder="ejemplo@gmail.com"
-                                        required>
+                                        >
+                                        <p id="error-email" class="text-danger"></p>
 
                                 </div>
 
@@ -313,7 +315,8 @@
                                         rows="6"
                                         maxlength="500"
                                         placeholder="Escribe tu consulta..."
-                                        required></textarea>
+                                        ></textarea>
+                                        <p id="error-comentario" class="text-danger"></p>
 
                                     <div class="form-text">
                                         Máximo 500 caracteres.
@@ -330,6 +333,7 @@
                                     Enviar mensaje
 
                                 </button>
+                                <p id="mensaje-enviado" class="text-success"></p>
 
                             </form>
 
@@ -372,6 +376,7 @@
     <!-- JavaScript propio -->
     <script src="js/productos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/validacion-contacto.js"></script>
     
 
 </body>

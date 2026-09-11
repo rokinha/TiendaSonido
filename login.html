@@ -104,7 +104,7 @@
 
                     <h2 class="mt-5">Iniciar sesión</h2>
 
-                    <form>
+                    <form id="formulario-login" novalidate>
                         <div class="my-3">
                             <label for="correo" class="form-label">Correo: </label>
                             <input class="form-control"
@@ -112,6 +112,7 @@
                                 id="correo"
                                 name="correo"
                                 placeholder="Correo">
+                                <p id="error-correo" class="text-danger"></p>
                         </div>
 
                         <div class="my-3">
@@ -121,6 +122,7 @@
                                 id="contrasena"
                                 name="contrasena"
                                 placeholder="Contraseña">
+                                <p id="error-contrasena" class="text-danger"></p>
                         </div>
 
                         <div class="text-start my-5">
@@ -162,6 +164,7 @@
     <!-- JavaScript propio -->
     <script src="js/productos.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/validacion-login.js"></script>
     
     
 </body>
