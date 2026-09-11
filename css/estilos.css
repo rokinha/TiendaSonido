@@ -427,6 +427,24 @@ footer p {
     margin: 5px 0;
 }
 
+/* ========================================
+   VALIDACIONES DE FORMULARIOS
+======================================== */
+
+.mensaje-validacion {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.mensaje-error {
+    color: #dc3545;
+}
+
+.mensaje-exito {
+    color: #198754;
+}
+
 
 /* ========================================
    responsivo pantalla mediana 
