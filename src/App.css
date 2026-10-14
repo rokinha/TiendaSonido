@@ -1,0 +1,48 @@
+
+.notificacion-carrito {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  z-index: 2000;
+  max-width: calc(100vw - 40px);
+  padding: 14px 20px;
+  border-radius: 8px;
+  background-color: #198754;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: aparecer-notificacion 0.25s ease-out;
+}
+
+.notificacion-carrito.error {
+  background-color: #dc3545;
+}
+
+@keyframes aparecer-notificacion {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.header-sonido-vivo {
+  background-color: #111111;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.logo-header {
+  display: block;
+  width: min(100%, 380px);
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
